@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
+
 <body>
     <!-- banner section -->
- <section class="w-[100%] h-[100vh] bg-[url('image/banner.jpg')] bg-center bg-cover">
-    <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
-        <header class="max-w-[1170px] mx-auto">
-            <div class="gride sm:gride-cols-2 gride-cols-[30%_auto] px-[10px] items-center">
-                <figure>
-                    <img src="/image/Netflix_Logo_PMS.png" class="w-[148px]" alt="">
-                </figure>
-                <div class="flex justify-end ">
-                    <div>
-                        <select name="" id="">
-                            <option value="">English</option>
-                            <option value="">Hindi</option>
-                        </select>
+    <section class="w-[100%] h-[100vh] bg-[url('image/banner.jpg')] bg-center bg-cover">
+        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
+            <header class="max-w-[1170px] mx-auto">
+                <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] items-center">
+                    <figure>
+                        <img src="/image/Netflix_Logo_PMS.png" class="w-[148px]" alt="">
+                    </figure>
+                    <div class="flex justify-end gap-[10px]">
+                        <div>
+                            <select name="" id=""
+                                class="bg-[black] text-white border-[1px] border-[white] p-[7px_20px rounded-[5px]">
+                                <option value="">English</option>
+                                <option value="">Hindi</option>
+                            </select>
+                        </div>
+                        <button class="bg-[red] rounded-[5px] text-white px-[10px]">Sign in</button>
                     </div>
-                    <button class="text-red-200">Sign in</button>
+                </div>
+            </header>
+
+            <div class="max-w-[1170px] mx-aut sm:py[150px py-[50px] text-center text-white ">
+                <h1 class="sm:text-[50px] text-[35]  font-bold">Unlimited movies, TV shows and more</h1>
+                <h4 class="text-[20px] py-[15px]">Watch anywhere. Cancel anytime.</h4>
+                <p class="text-[20px]">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
+                    <form action="" class="grid gap-[20px] sm:grid-cols-[70%_auto] sm:grid-cols-1">
+                        <input type="text" class="border-[1px] pl-[20px] h-[50px] border-[#ccc] bg-[transparent]"
+                            placeholder="Email address">
+                        <button
+                            class="bg-[red] rounded-[5px] text-white px-[10px] py-[15px] hover:bg-[rgb(193,17,25)] duration-300 text-xl">Get
+                            Started ></button>
+                    </form>
                 </div>
             </div>
-        </header>
-    </div>
- </section>
- <!-- banner section end -->
+        </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- Enjoy on your TV start Section -->
+    <section class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[50px] py-[50px]">
+        <div class="mx-w-[1170px] mx-auto px-[15px]">
+            <div class="grid sm:grid-cols-2 sm:grid-cols-1 items-center">
+                <div class="text-white">
+                    <h2 class="sm:text-[50px] text-[40] font-bold">Enjoy on your TV</h2>
+                    <p class="sm:text-[25px] text-[20px] pt-[25px]">Watch on smart TVs, PlayStation, Xbox, Chromecast <br> Apple TV, Blu-ray players and more.</p>
+                </div>
+                <figure class="relative">
+                    <Video class="absolute w-[70%] left-[10%] bottom-[20%] z-[1]">
+                      <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v">
+                    </Video>
+                    <img class="relative z-[2]" src="image/tv.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- Enjoy on your TV end Section -->
 </body>
+
 </html>
